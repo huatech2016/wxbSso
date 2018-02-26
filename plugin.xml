@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-wxbsso" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+
+    <name>wxbsso Plugin</name>
+    <description> sso for wxb</description>
+    <author>huatech</author>
+    <license>MIT License</license>
+
+    <js-module name="SsowxbPlugin" src="www/ssowxbPlugin.js">
+        <clobbers target="cordova.plugins.ISsowxbPlugin" />
+    </js-module>
+
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="SsowxbPlugin">
+                <param name="android-package" value="huatech.plugin.sso.SsowxbPlugin" />
+            </feature>
+        </config-file>
+
+
+        <source-file src="src/android/SsowxbPlugin.java" target-dir="src/huatech/plugin/sso" />
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+        </config-file>
+
+    </platform>
+</plugin>

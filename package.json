@@ -1,0 +1,32 @@
+{
+  "name": "cordova-plugin-wxbsso",
+  "version": "1.0",
+  "description": "wxbsso for cordova plugin",
+  "cordova": {
+    "id": "cordova-plugin-wxbsso",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huatech2016/wxbSso.git"
+  },
+  "keywords": [
+    "JPush",
+    "push",
+    "Push",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0"
+    }
+  ],
+  "peerDependencies": {
+    "cordova-plugin-device": ">=1.0.0"
+  }
+}
